@@ -1,7 +1,513 @@
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
 
-<h1>Testing</h1>
+    <title>STI Education Systems Holdings</title>
 
-</body>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="assets/css/style_inside.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<link href="css/demo.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link href="css/full-slider.css" rel="stylesheet">
+
+
+
+
+	
+    	
+    
+    
+    
+<style type="text/css">
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #666;
+  
+  
+    width: 100%;
+    height: 100%;    
+  
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: 300 }
+*,
+*:focus { outline: none !important }
+a { color: #2d2d2d }
+a:hover,
+a:focus {
+  color: #0c86b6;
+  text-decoration: none;
+}
+.hiding { opacity: 0 }
+.showing { opacity: 1 }
+.img-rounded {
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+.btn {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+          transition: all .2s;
+}
+.btn-blue {
+  color: #fff;
+  background-color: #0093cf;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  color: #fff;
+/*  background-color: #2a3940;*/
+  background-color: #0060aa;
+}
+.btn-green {
+  color: #fff;
+  background-color: #71be3c;
+}
+.btn-green:hover,
+.btn-green:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #2a3940;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  color: #fff;
+  background-color: #2a3940;
+}
+.loader {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.fading-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/fading-line.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page { overflow: hidden }
+.page .content { padding: 60px 0 }
+.page .content.cover { padding: 240px 0 }
+.page .heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.page .border {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #0060aa;
+}
+.page .heading p { margin: 20px auto 0 }
+
+
+
+
+
+
+
+/*html, body {
+height: 100%;
+padding: 0;
+margin: 0;
+}
+body {
+min-height: 600px;
+}
+body * {
+font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+font-size: 14px;
+color: #333;
+line-height: 22px;
+}*/
+#wrapper {
+width: 100%;
+height: 100%;
+position: relative;
+}
+.caroufredsel_wrapper {
+/*	width: 100% !important;
+	height: 100% !important;*/
+}
+#carousel div {
+	width: 100%;
+/*	height: 100%; */
+	overflow: hidden;
+	float: left;
+}
+#carousel div img {
+/*	width: auto;*/
+/*	height: auto;*/
+	min-width: 100%;
+/*	min-height: 100%;*/
+}
+#text {
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 350px;
+	height: 350px;
+	padding: 50px;
+	margin: -225px 0 0 -225px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	box-shadow: 0 0 50px #000;
+	border-radius: 20px;
+}
+#text h4 {
+	font-size: 33px;
+	line-height: 25px;
+	margin: 0 0 20px 0;
+}
+#text small, #text small * {
+	font-size: 12px;
+	color: #666;
+}
+	
+	
+	
+	
+.navbar-default.affix {
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom-color: transparent;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.navbar {
+  border-radius: 0 !important;
+}	
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+}
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+}
+</style>
+
+
+    <style type="text/css">
+	
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-submenu {
+    position: relative;
+	width:230px;
+}
+
+.dropdown-submenu>.dropdown-menu {
+	width:230px;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.logo_bottom {	height:70px;
+	width:auto;
+	margin-right:0px;
+}
+    </style>    
+    
+    
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#fff;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           <a class="navbar-brand nav-external" href="#home" style="margin:0; padding:0;"><img src="assets/img/logo_navbar.png" style="height:44px; width:auto; margin:3px 0px 2px 0px; padding:0;background-color:#0F3; "></a>
+        </div>
+        <div class="collapse navbar-collapse">
+<!--            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/fontenele/bootstrap-navbar-dropdowns" target="_blank">GitHub Project</a></li>
+            </ul>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About STI ESH<b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+
+                       <li><a href="about-sti-holdings.html">Our Business</a></li>
+                        <li><a href="about-sti-holdings.html#corporateprofile">Corporate Business Profile</a></li>
+                        <li><a href="about-sti-holdings.html#missionvision">Mission, Vision, Values</a></li>
+                        <li><a href="board-of-directors.html">Board of Directors, Management Team, & Executive Officers</a></li>
+                        <li><a href="#" target="_blank">Organizational Chart</a></li>
+                        <li><a href="#" target="_blank">Conglomerate Map / Group Corporate Structure</a></li>
+                        <li><a href="board-of-directors.html#articlesofincorportation">Articles of Incorporation and By-Laws & All Amemdments thereto</a></li>
+
+<!--                        <li><a href="board.html">Our Business</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Company</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Corporate / Business Profile</a></li>
+                                <li><a href="#">Mission, Vision and Values</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Corporate Governance <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Manual on Corporate Governance</a></li>
+                        <li><a href="#">Code of Business Conduct & Ethics</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEC Filings</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Manual on Corporate Governance</a></li>
+                                <li><a href="#">Code of Business Conduct & Ethics</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Notice of Annual or Special Stockholder's Meeting</a></li>
+                    </ul>
+                </li>
+
+<!--                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Disclosures <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="#">Our Business</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEC Filings</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">SEC Form 17-A</a></li>
+                                <li><a href="#">SEC Form 17-Q</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Notice of Annual or Special Stockholder's Meeting</a></li>
+                    </ul>
+                </li>-->
+
+
+                <li><a href="#">Press Materials / News </a></li>
+
+
+                <li>
+                    <a href="disclosures.html" class="dropdown-toggle" data-toggle="dropdown">Investor Relations <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+<!--                        <li><a href="#">Our Business</a></li>-->
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SEC Filings</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="disclosures.html">SEC Form 17-A</a></li>
+                                <li><a href="#">SEC Form 17-Q</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Notice of Annual or Special Stockholder's Meeting</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+     <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active deepskyblue">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/home.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated" data-animation="animated bounceInLeft">STI Completes Ortigas-Cainta Academic Center</h2>
+                    <p data-animation="animated bounceInRight">The campus sits on a sprawling four-hectare property that features two buildings: a three-storey edifice which houses the Head Office of STI and the seven-storey school. The new campus, which promises to house one of the most modern education facilities in the country, can accommodate 7,800 students.
+
+</p>
+                </div>
+            </div>
+            <div class="item skyblue">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/contact.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>STI Sends Largest Contingent to Run for Pasig</h2>
+                    <p>Following the success of the previous advocacy runs for the Pasig River, Team STI once again unfolded its solid support to the environmental cause as it sends the largest school contingent to the fourth installment of ABS-CBN Foundation's Kapit Bisig para sa Ilog Pasig (KBPIP) run</p>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('assets/img/cover/mobilebus.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Driving Education Where IT Matters</h2>
+                    <p>The STI Mobile School 2 is the second installment of STI’s “Driving Education Where IT Matters” campaign. The new Mobile School is equipped with a state-of-the-art computer laboratory with internet access, 27 units of multimedia computers, LCD monitors, sound system, and other top-of-the-line computer equipment.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+
+    </header>
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12" align="center">
+            <p>&nbsp;</p>
+<!--                <h1>Full Slider by Start Bootstrap</h1>
+                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>--> <img src="assets/img/sticollege.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/westnegros.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/iacademy2.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/delossantos.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/philcare.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/phillife.jpg" class="logo_bottom img-thumbnail img-responsive">&nbsp;&nbsp; <img src="assets/img/philplans.jpg" class="logo_bottom img-thumbnail img-responsive"> </div>
+        </div>
+        <br>
+        <p class="text-center">Copyright &copy; 2015. All Rights Reserved.</p>
+		<br>
+
+      <!-- Footer -->
+<!--        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>-->
+
+    </div>
+    <!-- /.container -->
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/demo.js"></script>
+
+   <!-- <script src="docs.js"></script>-->
+  </body>
 </html>
