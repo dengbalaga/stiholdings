@@ -246,6 +246,46 @@ a:focus {
 
 
 
+/* NAV */
+
+.dropdown-submenu {
+	width:360px !important;
+}
+.dropdown-menu{
+	width:360px !important;
+}
+.dropdown-menu li {
+border-bottom:1px solid #f5f5f5;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color:#0093cf !important;
+	color:#fff;
+}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color:#fff !important;
+}
+
+/* END NAV */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #home {
   padding: 0;
