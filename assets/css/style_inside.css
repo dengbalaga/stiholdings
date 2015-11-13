@@ -258,6 +258,16 @@ a:focus {
 border-bottom:1px solid #f5f5f5;
 }
 
+.dropdown-submenu li a:hover, a:focus {
+    background-color:#0093cf !important;
+	color:#fff;
+}
+.dropdown-menu li a:hover, a:focus {
+    background-color:#0093cf !important;
+	color:#fff;
+}
+
+
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
 	background-color:#0093cf !important;
 	color:#fff;
